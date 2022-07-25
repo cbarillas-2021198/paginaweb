@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Personal</title>
+    <link rel="shortcut icon" href="./images/icono.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/icono3.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Página Personal</p>
+            <nav>
+                <a href="#hero">Inicio</a>
+                <a href="#parte-biografia">Biografía</a>
+                <a href="#videos-favoritos">Videos</a>
+
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <h1>Bienvenido</h1>
+    </section>
+
+    <section id="parte-biografia">
+        <div class="programas">
+            <div class="container">   
+                <div class="img-container"></div>
+                <div class="texto">
+            <h2>Autobiografia</h2>
+            <p>Mi nombre es César Alexander Barillas Dominguez, nací en Ciudad de Guatemala, el 14 de Junio de 2004, Actualmente vivo con mis padres, tengo un hermano el cual reside en Estados Unidos. A la edad de 6 años comenze a estudiar en la escuela Miguel magone hasta el grado de segundo primaria, luego curse los grados de 3ro - 6to primaria en el colegio Emilio Arenales Catalan, posteriormente curse en el colegio Valle Real hasta 3ro básico, actualmente estoy cursando perito en Informática en Fundación Kinal. <br> <br> Luego  de graduarme, me interesa mucho cursar la carrera de producción músical, desde pequeño me ha interesado el hecho de ser DJ/Productor y actualmente  una de las cosas que mas me gusta realizar es producir música. </p>
+        </div>
+    </div>
+
+
+    </section>
+    <section id="videos-favoritos">
+        <div class="container">
+            <h2>Videos Favoritos</h2>
+            <div class="programas">
+            <div class="carta"><h3>Musica<h3>
+
+                <a href="https://www.youtube.com/watch?v=yaWVe4R55aY&t=2s"> <button>Fisher</button></a> 
+                <a href="https://www.youtube.com/watch?v=e9AaliDiHgk&t=102s"> <button>James Hype</button></a> 
+                <a href="https://www.youtube.com/watch?v=e94gack-DJk&t=1816s"> <button>Tiesto</button></a> 
+                <a href="https://www.youtube.com/watch?v=v2cNgve6_0c&t=4152s"> <button>Dimitri Vegas & Like Mike</button></a> 
+                <a href="https://www.youtube.com/watch?v=_xjFW4p4FDk&t=745s"> <button>Alok </button></a> 
+
+
+
+                
+                </div>
+            <div class="carta"><h3>Podcast</h3>
+                <a href="https://www.youtube.com/watch?v=-T6rAluaSm8"> <button>QuantumFracture</button></a> 
+                <a href="https://www.youtube.com/watch?v=h0LjHGjcBJE"> <button>Javier Santaolalla</button></a> 
+                <a href="https://www.youtube.com/watch?v=wY0w4fya3E4&t=1s"> <button>Neteando Ando</button></a> 
+                <a href="https://www.youtube.com/watch?v=8MpzvldTfvY&list=PLzuFY9Ixj9Z6nf7z6t5YmPDTLBgksk8Ts&index=69"> <button>Brandon Moreno</button></a> 
+                <a href="https://www.youtube.com/watch?v=cMSUJonFMjw"> <button>Kidd Keo </button></a> 
+            </div>
+            <div class="carta"><h3>Vlogs</h3>
+                <a href="https://www.youtube.com/watch?v=qtbc9G9OjU4"> <button>Disto</button></a> 
+                <a href="https://www.youtube.com/watch?v=Bv28mP8N5Ik&t=314s"> <button>Akim</button></a> 
+                <a href="https://www.youtube.com/watch?v=De5gmi87aBM"> <button>Carnage</button></a> 
+                <a href="https://www.youtube.com/watch?v=AN_kVoK0jBA&t=260s"> <button>Rubius</button></a> 
+                <a href="https://www.youtube.com/watch?v=SyJGm9MXJxw&t=250s"> <button>EMF 2018 </button></a> 
+
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+     
+<footer>
+    <div class="container">
+        <p>&copy; César Barillas</p>
+    </div>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+</body>
+</html>
